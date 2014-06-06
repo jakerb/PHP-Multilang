@@ -1,0 +1,23 @@
+@heading {
+	en: "Hello";
+	de: "Gutentag";
+	fr: "Bonjour";
+}
+
+@heading_summary {
+	en: "its so much easier having a single file to translate all of your page text";
+	de: "es ist so viel einfacher, mit einer einzigen Datei, um alle Ihre Seite Text zu übersetzen";
+	fr: "son beaucoup plus facile d'avoir un seul fichier à traduire tout texte de votre page";
+}
+
+@example_header {
+	en: "PHP Multilang"; 
+	fr: "PHP multilingue";
+	de: "PHP multilingue";
+}
+
+@example_define_get {
+	en: "This tutorial shows you how you can use a get variable to load languages, simply set language to DE in the address bar to see the demo";
+	fr: "Ce tutoriel vous montre comment vous pouvez utiliser une variable get pour charger les langues, tout simplement définir la langue de DE dans la barre d'adresse pour voir la démo";
+	de: "Dieses Tutorial zeigt Ihnen, wie Sie eine get-Variable verwenden, um in der Adressleiste Sprachen, setzen Sie einfach die Sprache auf die DE zu laden, um die Demo zu sehen";
+}
