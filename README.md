@@ -1,4 +1,5 @@
 # [Simple PHP Multi-Language](#)
+* Visit Site: [Visit Site](http://cloudhosted.co/multilang)
 
 Simple PHP Multi-Language is a dead simply way of translating your projects without using a database. 
 
