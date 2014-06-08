@@ -3,6 +3,18 @@
 
 PHP Multilang is a dead simply way of translating your projects without using a database. 
 
+##Update
+
+You can now render a static page that contains the language ID's within curly braces:
+
+```
+{{header_title}}
+
+```
+
+Instead of defining each variable in the view, simply use the "render" and put all of your translations in 
+curly braces (see demo).
+
 ##Why did I make this?
 
 After working on a number of projects that needed translating into both French and German from English,

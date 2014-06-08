@@ -12,6 +12,27 @@
 			}
 		}
 
+
+		function render($dir) {
+			if(file_exists($dir)) {
+				$dir = file_get_contents($dir);
+			}
+			else {
+				echo "<p style=\"color:red;\"><b>Multilang Error:</b> Cannot find file to render</p>"; die();
+			}
+			$occ = mb_substr_count($this->lang, "@");
+
+			if (preg_match_all('/{{([^}]*)}/', $dir, $matches)) {
+				        foreach($matches[1] as $i) {
+				        	$page .= str_replace("{{{$i}}}", $this->say($i), $dir);
+				        	
+				        }
+				      echo preg_replace("/{{([^}]*)}}/", "", $page);
+			}
+
+
+		}
+
 		function say($id) {
 		$start  = strpos($this->lang, '@'.$id);
 		$end    = strpos($this->lang, '}', $start + 1);
