@@ -5,6 +5,10 @@ PHP Multilang is a dead simply way of translating your projects without using a 
 
 ##Update
 
+Notification is given when a translation isn't available in the translation file but is trying to be parsed
+on the page. 
+
+
 You can now render a static page that contains the language ID's within curly braces:
 
 ```
@@ -14,6 +18,8 @@ You can now render a static page that contains the language ID's within curly br
 
 Instead of defining each variable in the view, simply use the "render" and put all of your translations in 
 curly braces (see demo).
+
+N.B: render is in beta and is currently glitchy and not working as desired on some pages.
 
 ##Why did I make this?
 

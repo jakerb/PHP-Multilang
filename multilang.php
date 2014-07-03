@@ -28,6 +28,7 @@
 				        	
 				        }
 				      echo preg_replace("/{{([^}]*)}}/", "", $page);
+				      //$page[$occ] to print last (fully translated version)
 			}
 
 
@@ -43,7 +44,12 @@
 		        for($i=0;$i<count($m[1]);$i++) {
 		                $result[$m[1][$i]] = $m[2][$i];
 		        }
+		        if($result[$this->code] < " ") {
+		        	return "<p style=\"color:red;\"><b>Multilang Error:</b> No Translation Available</p>";
+		        }
+		        else {
 		        return str_replace("\"", "", $result[$this->code]);
+				}
 			}
 		}
 	}
